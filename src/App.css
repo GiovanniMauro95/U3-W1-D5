@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.AlbumImg {
+  width: 500px;
+height: 330px;
+object-fit: contain;
+}

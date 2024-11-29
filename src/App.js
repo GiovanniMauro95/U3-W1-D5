@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import "bootstrap-icons/font/bootstrap-icons.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+import MyNav from "./Components/MyNav"
+import SecondNavBar from "./Components/SecondNavBar"
+import MyFooter from "./Components/MyFooter"
+import MainContent from "./Components/MainContent"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App bg-dark">
+      <header>
+        <MyNav />
+        <SecondNavBar />
       </header>
+      <main>
+        <MainContent />
+      </main>
+      <footer>
+        <MyFooter />
+      </footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
